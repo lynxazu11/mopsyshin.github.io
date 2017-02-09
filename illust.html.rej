@@ -1,0 +1,13 @@
+diff a/illust.html b/illust.html	(rejected hunks)
+@@ -148,9 +148,9 @@
+               </div>
+             </div>
+           </div>
+-          </div>
+ 
+-            <div class="row valign">
++
++
+               <div class="col s12 m4">
+                 <div class="card">
+                   <div class="card-image">
