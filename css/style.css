@@ -42,7 +42,7 @@ nav .brand-logo {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 70vh !important;
   height: auto;
   color: rgba(255,255,255,.9);
 }
