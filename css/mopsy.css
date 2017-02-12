@@ -155,8 +155,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd645', end
   align-items: flex-end;
 }
 .wrapper .facebook .g-box {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   box-shadow: 5px 5px 30px 0px rgba(62, 62, 62, 0.2);
   margin-left: 1.5rem;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff63c2+0,5972f4+100 */
@@ -175,7 +175,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff63c2', end
 #profile-textbox {
   opacity: 0;
   position: relative;
-  top: -20px;
+  top: -10px;
 }
 .profile-index, .profile-detail {
   font-size: 12px;
@@ -194,7 +194,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff63c2', end
 .facebook .g-box img {
   height: 30px;
 }
-
 .detail .content {
   display: flex;
   align-items: center;
@@ -235,9 +234,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff63c2', end
 #detail-content {
   opacity: 0;
   position: relative;
-  left: -30px;
+  left: -15px;
 }
-#link-fb {
+#link-fb, #link-brunch {
   opacity: 0;
   position: relative;
   bottom: -15px;
@@ -246,7 +245,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff63c2', end
 #home {
   opacity: 0;
   position: relative;
-  top: -50px;
+  top: -15px;
   cursor: pointer;
 }
 #white-back {
@@ -312,5 +311,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff63c2', end
   }
   .detail .content .textarea .textbox1 .text1 {
     width: auto;
+  }
+  #link-brunch {
+    margin-left: 30px;
   }
 }
