@@ -4,13 +4,13 @@ $(document).ready(function(){
   $("#home").animate({
     opacity: 1,
     top: 0
-  }, 1000, 'easeOutCirc');
+  }, 1000, 'swing');
 
 
   $(".wrapper").animate({
     opacity: 1,
     left: 0
-  }, 1000,'easeOutCirc', function(){
+  }, 1000,'swing', function(){
     $("#profile-textbox").animate({
       opacity: 1,
       top: 0

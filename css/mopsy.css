@@ -101,6 +101,9 @@ background-color: #fff;
   align-items: center;
   height: 15vh;
 }
+.mopsy-logo img {
+  width: 50px;
+}
 .wrapper {
   width: 1400px;
   margin: 0 auto;
@@ -272,6 +275,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff63c2', end
   }
   .wrapper .profile .g-box {
     margin-right: 0;
+    width: 90%;
   }
   .wrapper .facebook .g-box {
     margin-left: 0;
@@ -286,6 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff63c2', end
   }
   .wrapper .detail .g-box {
     min-height: inherit;
+    width: 90%;
   }
   .detail .content .textarea {
     margin: 50px auto;
