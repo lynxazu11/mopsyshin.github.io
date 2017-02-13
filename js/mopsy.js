@@ -1,5 +1,10 @@
 $(document).ready(function(){
-
+  IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+  if (IS_IPAD) {
+    $(".content").css({
+      height: "calc(100% - 40px)"
+    });
+  };
 
   $("#home").animate({
     opacity: 1,
