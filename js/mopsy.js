@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
-  if (IS_IPAD) {
-    $(".content").css({
-      height: "calc(100% - 40px)"
-    });
-  };
+  // IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+  // if (IS_IPAD) {
+  //   $(".detail .content").css({
+  //     height: "660"
+  //   });
+  // };
 
   $("#home").animate({
     opacity: 1,
