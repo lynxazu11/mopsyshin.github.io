@@ -38,10 +38,17 @@ ul, li {
   padding: 0;
   margin: 0;
 }
+audio {
+  display: none;
+  opacity: 0;
+}
 .bg {
   width: 100vw;
   height: 100vh;
   background-color: #393939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn {
   position: absolute;
@@ -103,7 +110,7 @@ ul, li {
   bottom: 0;
   left: 50%;
   height: 50vh;
-  width: 100vw;
+  width: 95vw;
   max-width: 768px;
   transform: translate(-50%, 0);
   background-color: #FF5176;
@@ -112,11 +119,24 @@ ul, li {
   z-index: 99;
 }
 .side-nav ul {
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 20px 30px;;
+  height: 100%;
 }
 .side-nav ul li {
   margin-top: 10px;
+}
+.side-nav ul .line {
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.side-nav ul .title {
+  font-size: 20px;
 }
 .nav-open {
   animation-name: opennav;
@@ -137,12 +157,10 @@ ul, li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 30px;
-  height: 30px;
-  border-radius: 300px;
-  top: 50%;
-  left: 50%;
-  transform: translate( -50%, -50%);
+  width: 60vw;
+  height: 60vw;
+  border-radius: 1000px;
+  transform: scale(0);
   z-index: 50;
 }
 .album-play {
@@ -207,24 +225,63 @@ ul, li {
 }
 @keyframes albumplay {
   from {
-    transform: scale(1);
+    transform: scale(0.2);
     opacity: 0
   }
   to {
-    transform: scale(20);
+    transform: scale(1);
     opacity: 1
   }
 }
 @keyframes albumpause {
   from {
-    transform: scale(20);
+    transform: scale(1);
     opacity: 1
   }
   30% {
     opacity: 0
   }
   to {
-    transform: scale(1);
+    transform: scale(0.2);
     opacity: 0
+  }
+}
+@keyframes albumplaym {
+  from {
+    transform: scale(0.2);
+    opacity: 0
+  }
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+@keyframes albumpausem {
+  from {
+    transform: scale(1);
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+  to {
+    transform: scale(0.2);
+    opacity: 0
+  }
+}
+@media (max-width:768px) {
+  .album {
+    width: 90vw;
+    height: 90vw;
+  }
+  .album-play {
+    animation-name: albumplaym;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+  }
+  .album-pause {
+    animation-name: albumpausem;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
   }
 }
