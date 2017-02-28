@@ -42,11 +42,12 @@ audio {
   opacity: 0;
 }
 .bg {
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: #393939;}
 .btn {
-  position: absolute;
+  position: fixed;
   background-color: #222;
   width: 90px;
   height: 90px;
