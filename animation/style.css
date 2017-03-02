@@ -154,7 +154,7 @@ audio {
   bottom: -300px;
 }
 .wrap-album {
-  position: absolute;
+  position: fixed;
   width: 60vw;
   max-width: 600px;
   height: 60vw;
@@ -164,7 +164,7 @@ audio {
   transform: translate(-50%, -50%);
 }
 .album {
-  position: absolute;
+  position: fixed;
   background-image: url(./images/puth.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ audio {
 }
 @media (max-width:768px) {
   .wrap-album {
-    position: absolute;
+    position: fixed;
     width: 90vw;
     height: 90vw;
     top: 50%;
