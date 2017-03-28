@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>모두의셔틀 for Group</title>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-brand"><img src="icn_modoo_group.png"></div>
+      <a class="nav-user" href="http://www.modooshuttle.com/">개인버젼</a>
+  </div>
+  <div class="section-form">
+
+      <div class="wrap-form">
+        <div class="form-title">기업 및 단체 문의양식 </div>
+        <div class="form-title-sub">(*)는 필수입력입니다</div>
+
+        <!-- 기업/단체 타입선택 탭 -->
+          <div class="wrap-type">
+            <a class="tablink selection" href="form-biz.html">
+              기업
+            </a>
+            <a class="tablink" href="form-group.html">
+              단체
+            </a>
+          </div>
+
+
+        <!-- 기업타입 폼 -->
+          <div id="biz" class="formtype">
+            <div class="form-card">
+              <div class="title-input">회사 정보</div>
+              <div class="group-input">
+                  <div class="header-input">회사이름*</div>
+                  <input class="input-form-base">
+              </div>
+              <div class="group-input">
+                  <div class="header-input">회사위치*</div>
+                  <input class="input-form-base">
+              </div>
+              <div class="group-input-doubble">
+                    <div class="container">
+                      <input type="checkbox" name="group2" id="checkbox-1">
+                      <label for="checkbox-1"><span class="checkbox header-input">기존셔틀 운행여부</span></label>
+                    </div>
+              </div>
+              </div>
+              <div class="form-card">
+              <div class="title-input">운행 정보</div>
+              <div class="group-input radio-group">
+                  <div class="header-input">출/퇴근 여부*</div>
+                  <ul>
+                    <li>
+                      <input type="radio" id="gooffice" name="gooffice">
+                      <label for="gooffice">출근만</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="leave" name="gooffice">
+                      <label for="leave">퇴근만</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="both" name="gooffice">
+                      <label for="both">출퇴근 둘다</label>
+                      <div class="check"></div>
+                    </li>
+                  </ul>
+              </div>
+              <div class="group-input radio-group">
+                  <div class="header-input">운행 일수*</div>
+                  <ul>
+                    <li>
+                      <input type="radio" id="5day" name="days">
+                      <label for="5day">주 5일</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="6day" name="days">
+                      <label for="6day">주 6일</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="7day" name="days">
+                      <label for="7day">주 7일</label>
+                      <div class="check"></div>
+                    </li>
+                  </ul>
+              </div>
+              <div class="group-input time-input">
+                <label class="header-input" for="time-go">출근시간</label>
+                <input type="time" value="08:30" />
+            </div>
+            <div class="group-input time-input">
+              <label class="header-input" for="time-go">퇴근시간</label>
+              <input type="time" value="18:30" />
+          </div>
+              <div class="group-input radio-group">
+                  <div class="header-input">운행기간</div>
+                  <ul>
+                    <li>
+                      <input type="radio" id="6month" name="schedule">
+                      <label for="6month">6개월</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="12month" name="schedule">
+                      <label for="12month">12개월</label>
+                      <div class="check"></div>
+                    </li>
+                    <li>
+                      <input type="radio" id="etcmonth" name="schedule">
+                      <label for="etcmonth">기타</label>
+                      <div class="check"></div>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+            <div class="form-card">
+              <div class="title-input">노선 정보<span>(1)</span></div>
+              <div class="group-input">
+                  <div class="header-input">최초 출발지</div>
+                  <input class="input-form-base" placeholder="시/구/동 까지 입력해주세요">
+              </div>
+              <div class="group-input">
+                  <div class="header-input">경유지 수</div>
+                  <input class="input-form-short">개
+              </div>
+              <div class="group-input">
+                <div class="header-input">회사까지의 예상거리</div>
+                <input class="input-form-short inline"><div class="header-input inline">km</div>
+              </div>
+              <div class="group-input">
+                <div class="remove-route">
+                  이 노선 제거 -
+                </div>
+              </div>
+            </div>
+            <div class="form-card">
+              <div class="title-input">노선 정보<span>(2)</span></div>
+              <div class="group-input">
+                  <div class="header-input">최초 출발지</div>
+                  <input class="input-form-base" placeholder="시/구/동 까지 입력해주세요">
+              </div>
+              <div class="group-input">
+                  <div class="header-input">경유지 수</div>
+                  <input class="input-form-short">개
+              </div>
+              <div class="group-input">
+                <div class="header-input">회사까지의 예상거리</div>
+                <input class="input-form-short inline"><div class="header-input inline">km</div>
+              </div>
+              <div class="group-input">
+                <div class="remove-route">
+                  이 노선 제거 -
+                </div>
+              </div>
+              <div class="group-input">
+                <div class="add-route">
+                  노선 추가하기 +
+                </div>
+              </div>
+            </div>
+            <div class="form-card">
+              <div class="title-input">담당자 정보</div>
+              <div class="group-input">
+                  <div class="header-input">담당자 이름*</div>
+                  <input class="input-form-base">
+              </div>
+              <div class="group-input">
+                  <div class="header-input">연락처*</div>
+                  <input class="input-form-base" placeholder="010 1234 5678">
+              </div>
+              <div class="group-input">
+                  <div class="header-input">기타사항</div>
+                <textarea class="input-form-area" placeholder="경유지 및 추가 문의사항"></textarea>
+              </div>
+            </div>
+
+
+
+          </div>
+          <a class="btn-submit" href="success.html">제출하기</a>
+
+      </div>
+
+  </div>
+
+</body>
+</html>
