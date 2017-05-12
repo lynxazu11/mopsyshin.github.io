@@ -73,7 +73,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-family: 'helvetica', 'Sans-serif';
   min-height: 100vh;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c7ffb5+0,ffd645+35,ff63c2+67,ff63c2+67,5972f4+100 */
