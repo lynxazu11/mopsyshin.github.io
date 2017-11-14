@@ -1,0 +1,344 @@
+/*common style*/
+
+@font-face {
+  font-family: '나눔고딕';
+  src:url('../font/NanumGothic.eot');
+}
+@font-face {
+  font-family: '나눔고딕';
+  src:url('../font/NanumGothic.woff');
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+*, body, html, p, span {
+   padding: 0;
+   margin: 0;
+ }
+ body {
+   font-family: '나눔고딕';
+   margin: 0;
+   padding: 0;
+ }
+ div, p, span, button, input {
+   font-family: '나눔고딕';
+ }
+ html {
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+ }
+ a {
+   text-decoration: none;
+ }
+ hr {
+   border: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 1px;
+    background-image: linear-gradient(90deg,hsla(0,0%,100%,0),#dbdbdb,hsla(0,0%,100%,0));
+ }
+
+/*index*/
+.intro {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+
+}
+.container {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 768px;
+  border-radius: 20px;
+  box-shadow: 2px 14px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  width: 100%;
+  height: 77px;
+  background-color: #ed317d;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.header p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 25px 45px;
+}
+.wrap-content {
+  width: 100%;
+}
+.how .content {
+  margin: 50px 45px;
+}
+.content {
+  margin: 50px 45px;
+}
+.content .title div {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 45px;
+}
+.company {
+  font-size: 40px;
+  color: #ed317d;
+}
+.content .disc {
+  margin: 50px 0;
+}
+.content .disc p:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.content .disc p.p2 {
+  font-size: 15px;
+  line-height: 25px;
+}
+.content .disc p span {
+  color: #ed317d;
+}
+.content .disc p:nth-child(2) {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.content .disc p.p3 {
+  color: #ed317d;
+}
+.content .disc .ask {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: bold;
+  color: #5aaffd;
+}
+.content .disc .alert {
+  width: 100%;
+}
+.content .form form input {
+  height: 45px;
+  padding: 0 15px;
+  width: 200px;
+  border: 1px solid #8e8e8e;
+
+}
+.content .form form button {
+  background-color: #ed317d;
+  border: 1px solid #ed317d;
+  border: 0;
+  margin: 0;
+  color: #fff;
+  height: 47px;
+  width: 80px;
+  position: relative;
+  right: 5px;
+  cursor: pointer;
+}
+.form-h video {
+  width: 100%;
+}
+.form-h button {
+  margin-top: 15px;
+  width: 100%;
+  height: 46px;
+  background-color: #ed317d;
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+}
+button.inactive {
+  background-color: #dbdbdb !important;
+}
+button.download {
+  border: 0;
+  background-color: #44469d;
+  color: #fff;
+  width: 100%;
+  padding: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+button.download span:nth-child(2) {
+  padding-left: 10px;
+}
+.footer {
+  height: 100px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  text-align: left;
+}
+.footer span:nth-child(1) {
+  padding-left: 45px;
+}
+.footer span:nth-child(2) {
+  padding-left: 30px;
+  font-weight: bold;
+  color: #8e8e8e;
+}
+.sub {
+  margin: 0 45px 50px 45px;
+}
+.sub p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #444444;
+  line-height: 25px;
+}
+.sub p span {
+  color: #ed317d;
+}
+.rnlink {
+  display: block;
+  margin: 30px auto;
+  max-width: 300px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: #44469d;
+  color: #fff;
+  font-weight: bold;
+}
+@media (max-width:768px) {
+  .intro {
+    min-height: 100vh;
+    display: -webkit-block;
+    display:         block;
+    -webkit-align-items: inherit;
+            align-items: inherit;
+
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 768px;
+    box-shadow: none;
+  }
+  .header {
+    width: 100%;
+    height: 77px;
+    background-color: #ed317d;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .header p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 25px 15px;
+  }
+  .content {
+    margin: 45px 15px;
+  }
+  .how .content {
+    margin: 45px 15px;
+  }
+  .content .title div {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 35px;
+  }
+  .company {
+    font-size: 30px;
+    color: #ed317d;
+  }
+  .content .disc {
+    margin: 30px 0;
+  }
+  .content .disc p:nth-child(1) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .content .disc p:nth-child(1) span {
+    color: #ed317d;
+  }
+  .content .disc p:nth-child(2) {
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .content .form form input {
+    height: 45px;
+    padding: 0 15px;
+    width: 80%;
+    border: 1px solid #8e8e8e;
+
+  }
+  .content .form form button {
+    display: block;
+    background-color: #ed317d;
+    border: 1px solid #ed317d;
+    border: 0;
+    margin: 0;
+    margin-top: 25px;
+    color: #fff;
+    height: 47px;
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+  .content .form form button:nth-child(3) {
+    background-color: #dbdbdb;
+    border: 1px solid #dbdbdb;
+  }
+
+  .footer {
+    height: 60px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    text-align: left;
+  }
+  .footer span:nth-child(1) {
+    padding-left: 15px;
+  }
+  .footer span:nth-child(1) img {
+    width: 60px;
+  }
+  .footer span:nth-child(2) {
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8e8e8e;
+  }
+  .sub {
+    margin: 0 15px 50px 15px;
+  }
+  .sub p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #444444;
+    line-height: 20px;
+  }
+  .sub p span {
+    color: #ed317d;
+  }
+  .rnlink {
+    display: block;
+    margin: 15px;
+    max-width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #44469d;
+    color: #fff;
+    font-weight: bold;
+  }
+}

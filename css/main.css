@@ -1,0 +1,115 @@
+body, div {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.mopsy-logo {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  height: 60px;
+}
+.mopsy-logo img {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+}
+.text-box {
+  max-width: 768px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.text-box .title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 6rem;
+  color: #fff;
+}
+.text-box .sub-title {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 0px;
+}
+.text-box .sub-title-k {
+  font-size: 1.0rem;
+  line-height: 1.5rem;
+  color:#fff;
+}
+.text-box .title-b {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: #fff;
+}
+.arrow {
+  display: inline-block;
+}
+.arrow img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+.fullpage {
+  height: 100vh !important;
+}
+.fullpage-content{
+  height: 100vh !important;
+}
+.fullpage-content-half {
+  height: 50vh !important;
+}
+.link-wrap {
+  width: 100%;
+  display: block;
+}
+.btn-top {
+  position: fixed;
+  bottom: 100px;
+  right: 150px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+@media (max-width: 640px) {
+  .text-box .title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+  }
+  .text-box .sub-title {
+    font-size: 1.0rem;
+    color: #fff;
+    margin-top: -5px;
+  }
+  .text-box .sub-title-k {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color:#fff;
+  }
+  .text-box .title-b {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    color: #fff;
+  }
+  .arrow img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  .fullpage-content {
+    height: 57vh !important;
+  }
+  .parallax img {
+    width: 640px;
+  }
+  .btn-top {
+    bottom: 30px;
+    right: 30px;
+  }
+}
