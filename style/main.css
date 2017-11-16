@@ -267,7 +267,8 @@ html, body, div, ul, li, p, span, a {
     .detail-container .content .disc {
       margin-top: 30px;
       font-size: 14px;
-      line-height: 24px; }
+      line-height: 24px;
+      font-weight: 400; }
       .detail-container .content .disc .image-box iframe {
         width: 300px;
         height: 300px; } }
