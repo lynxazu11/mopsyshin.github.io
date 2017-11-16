@@ -10,7 +10,7 @@ $(".btn-back").click(function(){
 })
 
 $("#link-redot").click(function(){
-    var url = "./redotprototype/index.html"; 
+    var url = "./redot/index.html"; 
     window.open(url);
 });
 
