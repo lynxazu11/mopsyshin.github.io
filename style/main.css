@@ -25,7 +25,8 @@ html, body, div, ul, li, p, span, a {
   margin: 0;
   padding: 0;
   list-style: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
 
 .wrapper {
   transition: all 0.3s; }
