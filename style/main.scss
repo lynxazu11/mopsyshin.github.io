@@ -208,6 +208,8 @@ html, body, div, ul, li, p, span, a {
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
     animation: gnbMotion 1 0.3s;
+    position: fixed;
+    top: 0;
     .gnb-wrapper {
         width: 100%;
         max-width: 768px;
@@ -246,6 +248,7 @@ html, body, div, ul, li, p, span, a {
     }
 }
 .detail-container {
+    padding-top: 60px;
     .content {
         width: 100%;
         max-width: 768px;

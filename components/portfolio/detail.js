@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $(window).scrollTop(0);
+})
+
 $(".btn-back").click(function(){
     $(".detail-container").addClass("inactive");
     setTimeout(function(){
@@ -42,5 +46,15 @@ $("#link-player").click(function(){
 
 $("#link-profile").click(function(){
     var url = "./profilelist/index.html"; 
+    window.open(url);
+});
+
+$("#link-republic").click(function(){
+    var url = "http://republicdot.com/"; 
+    window.open(url);
+});
+
+$("#link-ercenter").click(function(){
+    var url = "./images/ER_center_violence_prediction_project.pdf"; 
     window.open(url);
 });
