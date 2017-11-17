@@ -284,6 +284,8 @@ html, body, div, ul, li, p, span, a {
                 img {
                     max-width: 100%;
                     max-height: 500px;
+                    border-radius: 10px;
+                    box-shadow: 1px 2px 8px rgba(0,0,0,0.05);
                 }
             }
         }
