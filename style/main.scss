@@ -152,7 +152,7 @@ html, body, div, ul, li, p, span, a {
 #section {
     padding: 10px 0px;
     .section {
-        animation: fadeIn 1 0.3s;
+
     }
 }
 .section {
@@ -170,6 +170,12 @@ html, body, div, ul, li, p, span, a {
         display:flex;
         justify-content: space-between;
         align-items: center;
+        opacity: 0;
+        transform: translateX(-50px);
+        &.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
         .arrow {
             padding-right: 10px;
         }

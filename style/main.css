@@ -121,8 +121,6 @@ html, body, div, ul, li, p, span, a {
     transform: translateX(0px); } }
 #section {
   padding: 10px 0px; }
-  #section .section {
-    animation: fadeIn 1 0.3s; }
 
 .section .item {
   padding: 20px 22px;
@@ -137,7 +135,12 @@ html, body, div, ul, li, p, span, a {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-50px); }
+  .section .item.active {
+    opacity: 1;
+    transform: translateX(0); }
   .section .item .arrow {
     padding-right: 10px; }
   .section .item .info-disc {
