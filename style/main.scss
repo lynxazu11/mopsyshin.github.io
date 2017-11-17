@@ -41,12 +41,24 @@ html, body, div, ul, li, p, span, a {
         transform: translateX(-50px);
     }
 }
+
+@keyframes headerMotion {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 300px;
+    animation: headerMotion 1 0.7s;
     .profile {
         width: 88px;
         height: 88px;
@@ -75,6 +87,14 @@ html, body, div, ul, li, p, span, a {
     }
 }
 
+@keyframes sliderFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .container {
     width: 100%;
     max-width: 769px;
@@ -84,6 +104,7 @@ html, body, div, ul, li, p, span, a {
         padding: 0px 10px;
         background-color: #fff;
         transition: all 0.3s;
+        animation: sliderFadeIn 1 0.3s;
         &.active {
             padding: 10px 10px 0px;
             position: fixed;
