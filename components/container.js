@@ -34,6 +34,12 @@ function sliderFunc() {
         $("#section").load("./components/career/career.html");
         }
     });
+    $(".study").click(function(){
+        var a = $(this).hasClass("active");
+        if (a == false) {
+        $("#section").load("./components/study/study.html");
+        }
+    })
     $(".info").click(function(){
         var a = $(this).hasClass("active");
         if (a == false) {

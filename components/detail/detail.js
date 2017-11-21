@@ -58,3 +58,7 @@ $("#link-ercenter").click(function(){
     var url = "./images/ER_center_violence_prediction_project.pdf"; 
     window.open(url);
 });
+$("#link-composer").click(function(){
+    var url = "./colorcomposer/index.html"; 
+    window.open(url);
+});
