@@ -70,7 +70,7 @@ button:focus {
     z-index: 50;
     cursor: pointer;
     &:hover {
-        transform: scale(1.5);
+        transform: scale(1.3);
     }
 }
 
@@ -78,8 +78,9 @@ button#refresh {
     width: 100px;
     height: 100px;
     position: fixed;
-    bottom: 40px;
-    right: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 0.3s;
     background-color: rgba(0,0,0,0.1);
     color: #fff;
@@ -88,7 +89,7 @@ button#refresh {
     border-radius: 100px;
     cursor: pointer;
     &:hover {
-        transform: scale(1.5);
+        transform: translate(-50%, -50%) scale(1.3);
     }
     img {
         width: 50px;
