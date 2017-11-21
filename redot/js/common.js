@@ -18,31 +18,29 @@ function listSizeFunction() {
       "width" : "1710px"
     })
     initGrid();
-    console.log("6")
   } else if ($("#container").width() > 1471 ) {
     $("#list").css({
       "width" : "1420px"
     })
     initGrid();
-    console.log("5")
   } else if ($("#container").width() > 1181 ) {
     $("#list").css({
       "width" : "1130px"
     })
     initGrid();
-    console.log("4")
+
   } else if ($("#container").width() > 891 ) {
     $("#list").css({
       "width" : "840px"
     })
     initGrid();
-    console.log("3")
+
   } else if ($("#container").width() > 551 ) {
     $("#list").css({
       "width" : "570px"
     })
     initGrid();
-    console.log("2")
+
   } else if ($("#container").width() > 261 ) {
     $("#list").css({
       "width" : "280px"
@@ -96,7 +94,6 @@ function removeNoti() {
 
   // disc섹션 토글
   function toggleDisc(){
-    console.log("ccc")
     var listWidth = $("#list").width();
     var discWidth = 440;
     if ($("#disc").css("opacity") == "0") {
@@ -108,7 +105,6 @@ function removeNoti() {
         "width":"calc(100vw - 440px)"
       }, 1000, function() {
         listSizeFunction();
-        console.log("aaa")
       });
       $(".toggle_disc").css({
         "-webkit-transform":"rotate(0deg)",
@@ -129,7 +125,6 @@ function removeNoti() {
       });
       setTimeout(function(){
         listSizeFunction();
-        console.log("bbb")
     },600);
 
     } else {
@@ -153,7 +148,6 @@ function initDisc(){
       "width":"calc(100vw - 440px)"
     });
     listSizeFunction();
-    console.log("abcde")
   }
   $(".toggle_disc").css({
     "-webkit-transform":"rotate(0deg)"
