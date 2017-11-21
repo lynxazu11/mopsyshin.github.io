@@ -40,10 +40,10 @@ function sliderFunc() {
         $("#section").load("./components/info/info.html");
         }
     })
-    $(".slide-item").click(function(){
-        var a = $(".slide-item").hasClass("active");
+    $(".item").click(function(){
+        var a = $(".item").hasClass("active");
          if( a ){
-             $(".slide-item").removeClass("active");
+             $(".item").removeClass("active");
              $(this).addClass("active");
          }
          initBar();
