@@ -62,3 +62,7 @@ $("#link-composer").click(function(){
     var url = "./colorcomposer/index.html"; 
     window.open(url);
 });
+$("#link-heartclick").click(function(){
+    var url = "./heartclick/index.html"; 
+    window.open(url);
+});
