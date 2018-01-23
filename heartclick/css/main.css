@@ -10,7 +10,7 @@ button:focus, input:focus, textarea:focus {
     outline: none;
 }
 .heart-container {
-    width: 200px;
+    width: 150px;
     height: 300px;
     position: fixed;
     top: 50%;
@@ -20,24 +20,47 @@ button:focus, input:focus, textarea:focus {
 .btn {
     z-index: 10;
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-.refresh, .counter {
+.refresh, .counter{
     position: relative;
     width: 100%;
     text-align: center;
-    top: 180px;
+    top: 120px;
     opacity: 0;
     transition: all 1s;
     color: #37e2ae;
     cursor: pointer;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 200;
     margin-bottom: 20px;
+}
+.title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -20px;
+    transition: all 1s;
+    color: #37e2ae;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.refresh {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #37e2ae;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+.refresh:hover {
+    background-color: #37e2ae;
+    color: #fff;
 }
 .refresh.active, .counter.active {
     opacity: 1;
@@ -56,20 +79,24 @@ button:focus, input:focus, textarea:focus {
     }
 }
 .img {
-    width: 200px;
-    height: 200px;
-    transition: all 0.5s;
+    width: 150px;
+    height: 150px;
     position: absolute;
     opacity: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.active {
+.img.active {
     opacity: 1;
+    animation: finish 0.6s infinite;
+}
+.inactive {
+    display: none;
 }
 .img0.active {
     background-image: url("../images/heart-01.svg");
+    
 }
 .img1.active {
     background-image: url("../images/heart-02.svg");
@@ -85,6 +112,4 @@ button:focus, input:focus, textarea:focus {
 }
 .img5.active {
     background-image: url("../images/heart-06.svg");
-    transition: none;
-    animation: finish 0.6s infinite;
 }
