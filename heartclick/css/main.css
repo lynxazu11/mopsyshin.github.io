@@ -31,7 +31,7 @@ button:focus, input:focus, textarea:focus {
     width: 100%;
     text-align: center;
     top: 120px;
-    opacity: 0;
+    opacity: 0.01;
     transition: all 1s;
     color: #37e2ae;
     cursor: pointer;
@@ -94,22 +94,21 @@ button:focus, input:focus, textarea:focus {
 .inactive {
     display: none;
 }
-.img0.active {
+.img0 {
     background-image: url("../images/heart-01.svg");
-    
 }
-.img1.active {
+.img1 {
     background-image: url("../images/heart-02.svg");
 }
-.img2.active {
+.img2 {
     background-image: url("../images/heart-03.svg");
 }
-.img3.active {
+.img3 {
     background-image: url("../images/heart-04.svg");
 }
-.img4.active {
+.img4 {
     background-image: url("../images/heart-05.svg");
 }
-.img5.active {
+.img5 {
     background-image: url("../images/heart-06.svg");
 }
